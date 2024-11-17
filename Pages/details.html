@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details Page</title>
+
+    <!-- *******  Font Awesome Icons Link  ******* -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- *******  Link To Goggle Fonts  *******  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+     <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+     <!-- navbar-1 section -->
+    <nav class="desktop-navigation-menu">
+      <div class="container">
+        <div class="inner-navbar">
+          <div class="logo">
+            <a href="#">
+            <img src="../images/logo-dark.svg" alt="logo" />
+            </a>
+          </div>
+          <ul class="desktop-menu-category-list">
+            <li class="menu-category">
+              <a href="../index.html" class="menu-title">Home</a>
+            </li>
+            <li class="menu-category">
+              <a href="#" class="menu-title">Categories</a>
+            </li>
+            <li class="menu-category">
+              <a href="#" class="menu-title">about us</a>
+            </li>
+            <li class="menu-category">
+              <a href="../Pages/contact.html" class="menu-title">sig in</a>
+            </li>
+            <li class="menu-category">
+              <a href="#" class="menu-title">Pages</a>
+  
+              <ul class="dropdown-list">
+  
+                <li class="dropdown-item">
+                  <a href="../Pages/404.html">404 not found</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="../Pages/contact.html">sign in</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="../Pages/product.html">our products</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="./Pages/details.html">Details Product</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="../Pages/payment.html">card shopping</a>
+                </li>
+  
+              </ul>
+            </li>
+            <li class="menu-category">
+              <a href="#" class="menu-title">Blog</a>
+            </li>
+          </ul>
+          <div class="icon-list">
+            <div class="search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M90.14,76.4,76.43,62.71a35.84,35.84,0,0,0,4.9-18.2A36.7,36.7,0,1,0,44.63,81.2a35.75,35.75,0,0,0,17.91-4.69L76.24,90.2a9.9,9.9,0,0,0,13.9,0A9.76,9.76,0,0,0,90.14,76.4Zm-45.51-.09a31.81,31.81,0,1,1,31.8-31.8A31.87,31.87,0,0,1,44.63,76.31Zm42,10.47a5,5,0,0,1-3.42,1.47,4.56,4.56,0,0,1-3.42-1.47l-13-13a35.16,35.16,0,0,0,6.94-6.84L86.61,79.84A5,5,0,0,1,86.61,86.78Z"></path><path d="M47.07,20a2.41,2.41,0,0,1-2.44,2.45,22.06,22.06,0,0,0-22,22,2.45,2.45,0,0,1-4.9,0A26.9,26.9,0,0,1,44.63,17.59,2.41,2.41,0,0,1,47.07,20Z"></path></svg>
+            </div>
+            <div class="account">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50.47,5.05a21,21,0,1,0,21,21A21,21,0,0,0,50.47,5.05Zm0,36.69A15.63,15.63,0,1,1,66.13,26.08,15.69,15.69,0,0,1,50.47,41.74Z"></path><path d="M85.15,57.29h0a7.81,7.81,0,0,0-7.29-4.93H23.12a7.88,7.88,0,0,0-7.34,5,8.18,8.18,0,0,0,1.68,8.91L43.6,92.94a9.73,9.73,0,0,0,13.76,0L83.47,66.19A8.15,8.15,0,0,0,85.15,57.29ZM79.7,62.45,53.56,89.12a4.28,4.28,0,0,1-3,1.28,4.32,4.32,0,0,1-3.09-1.28L21.29,62.43a2.79,2.79,0,0,1-.58-3.1,2.59,2.59,0,0,1,2.42-1.62H77.87a2.53,2.53,0,0,1,2.44,1.67A2.72,2.72,0,0,1,79.7,62.45Z"></path></svg>
+            </div>
+            <div class="card-shopping">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M96.37,26.7,85.54,70a2.76,2.76,0,0,1-2.6,2.06H28.76A2.76,2.76,0,0,1,26.16,70L15.87,28.75H7.2a2.71,2.71,0,1,1,0-5.41H18a2.77,2.77,0,0,1,2.6,2.05l.21.65L31,66.68H80.88L91,26l.22-.65a2.68,2.68,0,1,1,5.2,1.31Z"></path><path d="M34.29,77.51A10.84,10.84,0,1,0,45.12,88.35,10.87,10.87,0,0,0,34.29,77.51Zm0,16.25a5.42,5.42,0,1,1,5.41-5.41A5.36,5.36,0,0,1,34.29,93.76Z"></path><path d="M77.63,77.51A10.84,10.84,0,1,0,88.46,88.35,10.87,10.87,0,0,0,77.63,77.51Zm0,16.25A5.42,5.42,0,1,1,83,88.35,5.36,5.36,0,0,1,77.63,93.76Z"></path><path d="M74.92,26a2.65,2.65,0,0,1-.76,2L57.91,44.25a2.88,2.88,0,0,1-3.9,0L37.75,28a2.73,2.73,0,0,1,3.8-3.91L53.25,35.8V4.38a2.71,2.71,0,1,1,5.42,0V35.8l11.7-11.71A2.66,2.66,0,0,1,74.92,26Z"></path></svg>
+        </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+     <!-- navbar-2 section -->
+    <section class="nav-bar">
+      <a href="#" class="nav__link nav__link--active">
+        <svg
+          class="fa-bars"
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon s-ion-icon"
+          viewBox="0 0 512 512"
+        >
+          <title>Grid</title>
+          <rect
+            x="48"
+            y="48"
+            width="176"
+            height="176"
+            rx="20"
+            ry="20"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="ionicon-fill-none ionicon-stroke-width"
+          ></rect>
+          <rect
+            x="288"
+            y="48"
+            width="176"
+            height="176"
+            rx="20"
+            ry="20"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="ionicon-fill-none ionicon-stroke-width"
+          ></rect>
+          <rect
+            x="48"
+            y="288"
+            width="176"
+            height="176"
+            rx="20"
+            ry="20"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="ionicon-fill-none ionicon-stroke-width"
+          ></rect>
+          <rect
+            x="288"
+            y="288"
+            width="176"
+            height="176"
+            rx="20"
+            ry="20"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="ionicon-fill-none ionicon-stroke-width"
+          ></rect>
+        </svg>
+      </a>
+      <a href="#" class="nav__link">
+        <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.40114 6.38957L1.9042 6.33435L2.40114 6.38957ZM1.62336 13.3896L2.1203 13.4448L1.62336 13.3896ZM13.3766 13.3896L12.8797 13.4448L13.3766 13.3896ZM12.5988 6.38957L13.0958 6.33435L12.5988 6.38957ZM1.9042 6.33435L1.12642 13.3344L2.1203 13.4448L2.89808 6.44478L1.9042 6.33435ZM2.61724 15H12.3827V14H2.61724V15ZM13.8735 13.3344L13.0958 6.33435L12.1019 6.44478L12.8797 13.4448L13.8735 13.3344ZM11.6049 5H3.39502V6H11.6049V5ZM13.0958 6.33435C13.0114 5.5747 12.3693 5 11.6049 5V6C11.8597 6 12.0737 6.19157 12.1019 6.44478L13.0958 6.33435ZM12.3827 15C13.2767 15 13.9723 14.2229 13.8735 13.3344L12.8797 13.4448C12.9126 13.741 12.6807 14 12.3827 14V15ZM1.12642 13.3344C1.02769 14.2229 1.72323 15 2.61724 15V14C2.31924 14 2.08739 13.741 2.1203 13.4448L1.12642 13.3344ZM2.89808 6.44478C2.92622 6.19157 3.14025 6 3.39502 6V5C2.6307 5 1.9886 5.5747 1.9042 6.33435L2.89808 6.44478ZM4.99998 4V3.5H3.99998V4H4.99998ZM9.99998 3.5V4H11V3.5H9.99998ZM7.49998 1C8.88069 1 9.99998 2.11929 9.99998 3.5H11C11 1.567 9.43298 0 7.49998 0V1ZM4.99998 3.5C4.99998 2.11929 6.11927 1 7.49998 1V0C5.56698 0 3.99998 1.567 3.99998 3.5H4.99998Z"
+          />
+        </svg>
+      </a>
+      <a href="#" class="nav__link">
+        <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M7.07926 0.222253C7.31275 -0.007434 7.6873 -0.007434 7.92079 0.222253L14.6708 6.86227C14.907 7.09465 14.9101 7.47453 14.6778 7.71076C14.4454 7.947 14.0655 7.95012 13.8293 7.71773L13 6.90201V12.5C13 12.7761 12.7762 13 12.5 13H2.50002C2.22388 13 2.00002 12.7761 2.00002 12.5V6.90201L1.17079 7.71773C0.934558 7.95012 0.554672 7.947 0.32229 7.71076C0.0899079 7.47453 0.0930283 7.09465 0.32926 6.86227L7.07926 0.222253ZM7.50002 1.49163L12 5.91831V12H10V8.49999C10 8.22385 9.77617 7.99999 9.50002 7.99999H6.50002C6.22388 7.99999 6.00002 8.22385 6.00002 8.49999V12H3.00002V5.91831L7.50002 1.49163ZM7.00002 12H9.00002V8.99999H7.00002V12Z"
+          />
+        </svg>
+      </a>
+      <a href="#" class="nav__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <path
+            d="M96.37,26.7,85.54,70a2.76,2.76,0,0,1-2.6,2.06H28.76A2.76,2.76,0,0,1,26.16,70L15.87,28.75H7.2a2.71,2.71,0,1,1,0-5.41H18a2.77,2.77,0,0,1,2.6,2.05l.21.65L31,66.68H80.88L91,26l.22-.65a2.68,2.68,0,1,1,5.2,1.31Z"
+          ></path>
+          <path
+            d="M34.29,77.51A10.84,10.84,0,1,0,45.12,88.35,10.87,10.87,0,0,0,34.29,77.51Zm0,16.25a5.42,5.42,0,1,1,5.41-5.41A5.36,5.36,0,0,1,34.29,93.76Z"
+          ></path>
+          <path
+            d="M77.63,77.51A10.84,10.84,0,1,0,88.46,88.35,10.87,10.87,0,0,0,77.63,77.51Zm0,16.25A5.42,5.42,0,1,1,83,88.35,5.36,5.36,0,0,1,77.63,93.76Z"
+          ></path>
+          <path
+            d="M74.92,26a2.65,2.65,0,0,1-.76,2L57.91,44.25a2.88,2.88,0,0,1-3.9,0L37.75,28a2.73,2.73,0,0,1,3.8-3.91L53.25,35.8V4.38a2.71,2.71,0,1,1,5.42,0V35.8l11.7-11.71A2.66,2.66,0,0,1,74.92,26Z"
+          ></path>
+        </svg>
+      </a>
+      <a href="#" class="nav__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <path
+            d="M50.47,5.05a21,21,0,1,0,21,21A21,21,0,0,0,50.47,5.05Zm0,36.69A15.63,15.63,0,1,1,66.13,26.08,15.69,15.69,0,0,1,50.47,41.74Z"
+          ></path>
+          <path
+            d="M85.15,57.29h0a7.81,7.81,0,0,0-7.29-4.93H23.12a7.88,7.88,0,0,0-7.34,5,8.18,8.18,0,0,0,1.68,8.91L43.6,92.94a9.73,9.73,0,0,0,13.76,0L83.47,66.19A8.15,8.15,0,0,0,85.15,57.29ZM79.7,62.45,53.56,89.12a4.28,4.28,0,0,1-3,1.28,4.32,4.32,0,0,1-3.09-1.28L21.29,62.43a2.79,2.79,0,0,1-.58-3.1,2.59,2.59,0,0,1,2.42-1.62H77.87a2.53,2.53,0,0,1,2.44,1.67A2.72,2.72,0,0,1,79.7,62.45Z"
+          ></path>
+        </svg>
+      </a>
+    </section>
+     <!-- sidebar section -->
+    <div class="sidebar">
+      <div class="logo-details">
+        <img src="../images/logo-dark.svg" alt="logo">
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="../index.html">
+            <i class="fa-solid fa-house"></i>
+            <span class="link_name">Home</span>
+          </a>
+        </li>
+       
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-tag"></i>
+              <span class="link_name">pages</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+           
+            <li><a href="../Pages/404.html">404 not found</a></li>
+            <li><a href="../Pages/contact.html">Sign in</a></li>
+            <li><a href="../Pages/product.html">our ptoducts</a></li>
+            <li><a href="../Pages/details.html">Details ptoducts</a></li>
+            <li><a href="../Pages/payment.html">Card shopping</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="link_name">About us</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user-check"></i>
+            <span class="link_name">sign in</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Chart</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-message"></i>
+            <span class="link_name">message</span>
+          </a>
+        </li>
+        <li>
+          <a href="./404.html">
+            <i class="fa-solid fa-ban"></i>
+            <span class="link_name">404</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-square-rss"></i>
+            <span class="link_name">Blogs</span>
+          </a>
+        </li>
+        
+  </ul>
+    </div>
+     <!-- Details section -->
+    <section class="details-main py-60 mt-80">
+      <div class="container">
+        <div class="inner-details">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <figure class="product-banner">
+                  <img
+                    src="../images/Instagram-01.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="Nike Sneaker"
+                    class="img-cover"
+                  />
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="product-banner">
+                  <img
+                    src="../images/Instagram-02.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="Nike Sneaker"
+                    class="img-cover"
+                  />
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="product-banner">
+                  <img
+                    src="../images/Instagram-03.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="Nike Sneaker"
+                    class="img-cover"
+                  />
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="product-banner">
+                  <img
+                    src="../images/Instagram-04.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="Nike Sneaker"
+                    class="img-cover"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="product-content">
+            <p class="product-subtitle">Nike Company</p>
+            <h1 class="h1 product-title">Fall Limited Edition Sneakers</h1>
+            <p class="lead">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+
+            <div class="wrapper">
+              <span class="price" data-total-price>$125.00</span>
+
+              <span class="badge">50%</span>
+
+              <del class="del">$250.00</del>
+            </div>
+
+            <div class="btn-group">
+              <div class="counter-wrapper">
+                <button class="counter-btn" data-qty-minus>
+                 -
+                </button>
+
+                <span class="span" data-qty>1</span>
+
+                <button class="counter-btn" data-qty-plus>
+                 +
+                </button>
+              </div>
+              <a href="">
+                <button  class="cart-btn">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <span class="span">Add to cart</span>
+                </button>
+              </a>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- product section -->
+    <div class="product-main py-60">
+      <div class="container">
+        <div class="section-title">
+          <h2> similar  product </h2>
+          <p class="lead">
+            Duis aute irure dolor in reprehen pteur sint occaecat cupidatat non
+            proident, sunt in culim id est.
+          </p>
+        </div>
+      <div class="product-grid">
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+
+            <img src="../images/shop-2-01.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+            <img src="../images/shop-2-02.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+            <p class="showcase-badge">15%</p>
+
+            <div class="showcase-actions">
+
+              <button class="btn-action">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+
+              <button class="btn-action">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+
+              <button class="btn-action">
+                <i class="fa-solid fa-repeat"></i>
+              </button>
+
+              <button class="btn-action">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="showcase-content">
+
+            <a href="#" class="showcase-category">jacket</a>
+
+          
+
+            <div class="showcase-rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+            </div>
+
+            <div class="price-box">
+              <p class="price">$48.00</p>
+              <del>$75.00</del>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="showcase">
+        
+          <div class="showcase-banner">
+            <img src="../images/shop-1-04.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default" width="300">
+            <img src="../images/shop-1-05.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover" width="300">
+        
+            <p class="showcase-badge angle black">sale</p>
+        
+            <div class="showcase-actions">
+
+              <button class="btn-action">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+
+              <button class="btn-action">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+
+              <button class="btn-action">
+                <i class="fa-solid fa-repeat"></i>
+              </button>
+
+              <button class="btn-action">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+
+            </div>
+          </div>
+        
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">shirt</a>
+        
+        
+        
+            <div class="showcase-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+        
+            <div class="price-box">
+              <p class="price">$45.00</p>
+              <del>$56.00</del>
+            </div>
+        
+          </div>
+        
+        </div>
+
+        <div class="showcase">
+        
+          <div class="showcase-banner">
+            <img src="../images/shop-7-01.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default" width="300">
+            <img src="../images/shop-7-02.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover" width="300">
+        
+            <div class="showcase-actions">
+
+              <button class="btn-action">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+
+              <button class="btn-action">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+
+              <button class="btn-action">
+                <i class="fa-solid fa-repeat"></i>
+              </button>
+
+              <button class="btn-action">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+
+            </div>
+          </div>
+        
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Jacket</a>
+        
+           
+        
+            <div class="showcase-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+        
+            <div class="price-box">
+              <p class="price">$58.00</p>
+              <del>$65.00</del>
+            </div>
+        
+          </div>
+        
+        </div>
+
+        <div class="showcase">
+        
+          <div class="showcase-banner">
+            <img src="../images/shop-4-01.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img default" width="300">
+            <img src="../images/shop-4-02.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img hover" width="300">
+        
+            <p class="showcase-badge angle pink">new</p>
+        
+            <div class="showcase-actions">
+
+              <button class="btn-action">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+
+              <button class="btn-action">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+
+              <button class="btn-action">
+                <i class="fa-solid fa-repeat"></i>
+              </button>
+
+              <button class="btn-action">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+
+            </div>
+          </div>
+        
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">skirt</a>
+        
+        
+        
+            <div class="showcase-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+        
+            <div class="price-box">
+              <p class="price">$25.00</p>
+              <del>$35.00</del>
+            </div>
+        
+          </div>
+        
+        </div>
+      
+
+     
+      
+       
+      </div>
+    
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer py-60">
+      <div class="container">
+        <div class="inner-footer">
+          <div class="box-footer">
+            <img src="../images/logo-dark.svg" alt="Logo" />
+            <p class="text-footer">
+              Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons
+              equat ipsutis sem nibh id elit.
+            </p>
+            <ul class="social">
+              <li>
+                <a href="#" class="facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="youtube">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="box-footer">
+            <h4>Quick Links</h4>
+            <ul class="links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Feature</a></li>
+              <li><a href="#">Attractions</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="box-footer">
+            <h4>Support</h4>
+            <ul class="links">
+              <li><a href="#">Forum</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="box-footer footer-gallery">
+            <h4>Instagram :</h4>
+            <img src="../images/Instagram-01.jpg" alt="" />
+            <img src="../images/Instagram-02.jpg" alt="" />
+            <img src="../images/Instagram-03.jpg" alt="" />
+            <img src="../images/Instagram-04.jpg" alt="" />
+            <img src="../images/Instagram-05.jpg" alt="" />
+            <img src="../images/Instagram-06.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="copyright">
+            <img src="../images/payment.png" alt="payment method" class="payment-img">
+            <p>Copyright ©  all rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
